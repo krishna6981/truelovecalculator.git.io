@@ -1,0 +1,207 @@
+<html>
+<head>
+<title>Love Calculator</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+
+<style>
+#outer
+{
+min-height:900px;
+width:1300px;
+background-color:white;
+margin:0px auto;
+}
+#head
+{
+height:160px;
+width:1300px;
+background-color:navy;
+border:20px groove blue;
+font-size:75px;
+text-align:center;
+font-family:algerian;
+color:white;
+}
+#img1
+{
+height:550px;
+width:1300px;
+}
+.card
+{
+height:20px;
+width:50%;
+background:white;
+margin:0px auto;
+transform:translate(-05%, 700%);
+opacity:85%;
+}
+.card-header
+{
+height:50px;
+width:100%;
+background:blue;
+font-size:30px;
+text-align:center;
+font-family:algerian;
+color:white;
+}
+.card-body
+{
+height:200px;
+width:100%;
+background:white;
+}
+.card-footer
+{
+height:50px;
+width:100%;
+background:blue;
+text-align:center;
+font-size:20px;
+font-family:algerian;
+color:white;
+}
+.btn
+{
+height:35px;
+width:275px;
+margin-top:-20px;
+margin-left:190px;
+background:skyblue;
+color:black;
+
+
+}
+#yn
+{
+height:40px;
+width:220px;
+margin-top:-30px;
+margin-left:70px;
+text-color:black;
+
+}
+#ln
+{
+height:40px;
+width:220px;
+margin-top:-45px;
+margin-left:350px;
+}
+#krishna
+{
+height:40px;
+width:220px;
+margin-top:20px;
+margin-left:220px;
+}
+.footer
+{
+height:230px;
+width:1300px;
+background:#696969;
+color:white;
+}
+
+</style>
+<script>
+function demo()
+{
+var yn=document.getElementById('yn').value;
+var ln=document.getElementById('ln').value;
+
+if(yn==""){
+alert('please enter your name');
+}
+else if(yn.length<=2)
+{
+alert('Min length is 3');
+}
+else if(!isNaN(yn))
+{
+alert('Numbers are not allowed');
+}
+else if(ln==""){
+alert('please enter your name');
+}
+else if(ln.length<=2){
+alert('Min length is 3')
+}
+else if(!isNaN(ln))
+{
+alert('Numbers are not allowed');
+}
+else
+{
+var lovedata=Math.random()*100;
+lovedata=Math.floor(lovedata);
+document.getElementById('krishna').value=lovedata +"%";
+}
+}
+var arr=["rose.jpg","propose.jpg","choc.jpg","teddy.jpg","promise.jpg","hug.jpg","valentine.jpg"];
+var i=0;
+function slider()
+{
+var im=document.getElementById("img1");
+im.src="images/"+arr[i]
+i++;
+if(i==arr.length)
+i=0
+}
+window.setInterval(slider,3000);
+
+</script>
+
+<body>
+<div id="outer">
+<div id="head">
+<marquee behavior="alternate">
+TRUE LOVE CALCULATOR
+</marquee>
+</div>
+<header>
+<div class="card">
+<div class="card-header">LOVE CALCULATOR</div>
+<div class="card-body"><br><br>
+<form class="form-inline">
+<div class="form-group">
+<input type="text" class="form-control text-center" placeholder="YOUR NAME" id="yn">
+</div>
+<img src="F:\love calculate\love\true love\images\ac.png" height="30px" width="35px" style="margin-top:-33px;margin-left:10px;  ">
+<div class="form-group">
+<input type="text" class="form-control text-center" placeholder="LOVES NAME"id="ln">
+</div>
+</form>
+<br><br>
+<button class="btn" onclick="demo()">CHECK</button>
+
+<br>
+<div>
+<input type="text" name="" id="krishna" class="form-control text-center"  placeholder="Love Percentage">
+</div>
+
+</div>
+<div class="card-footer" >GOD BLESS YOUR RELATIONSHIP</div>
+</div>
+</header>
+<img src="rose.jpg"  id="img1">
+
+<h3 class="footer">
+<br>
+* ट्रू लव कैल्क्युलेटर वेब साइट को सिर्फ मजे करने के लिए बनाया गया है।
+ यह एक वेबसाइट है जिससे आप सिर्फ मजे कर सकते है इसे आप हकीकत ना माने क्योंकी आपके प्यार कि तुलना कोई भी नहीं कर सकता है
+ तो आप लोग इस वेबसाइट से मजे खुद भी लीजिए और दूसरो को भी शेयर करिए
+
+<br><br>
+*        The Love Calculator web site is designed to be religious only. 
+        There is a website, from which you can only do religious, do not consider it a reality because no one can compare your love.
+        You guys can also have fun from this website and share some.
+
+</h3>
+</div>
+
+</body>
+</head>
+</html>
